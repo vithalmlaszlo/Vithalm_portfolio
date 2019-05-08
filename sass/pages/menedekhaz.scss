@@ -27,7 +27,13 @@
         h1 {
             font-size: 8rem;
             transform: translateX(-8rem);
+
+            @media only screen and (max-width: 576px) {
+                transform: translateX(-1rem);
+              }
         }
+
+        
 
         img {
             margin-left:-2rem;

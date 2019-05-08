@@ -9,7 +9,7 @@
     "start": "npm-run-all --parallel devserver watch.sass",
 
     "compile.sass": "node-sass sass/main.scss css/style.comp.css",
-    "concat.css": "concat -o css/style.concat.css css/style.comp.css css/normalize.css css/animate.css",
+    "concat.css": "concat -o css/style.concat.css css/style.comp.css css/normalize.css css/animate.css css/magnific-popup.css" ,
     "prefixer.css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
     "compress.css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build.css": "npm-run-all compile.sass concat.css prefixer.css compress.css"
