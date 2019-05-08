@@ -1,0 +1,100 @@
+.carnet {
+    height: 100vh;
+    margin-bottom: 20rem;
+
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 10rem;
+      }
+    
+      @media only screen and (max-width: 576px) {
+        margin-bottom: 5rem;
+      }
+
+  &__logo {
+    &--img {
+      height: 60%;
+    }
+  }
+
+  &__info {
+    &--box1 {
+      margin-bottom: 2rem;
+
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+        margin-bottom: 0rem;
+      }
+
+      h3 {
+        font-family: "Advent Pro", sans-serif;
+        font-size: 1.4rem;
+        letter-spacing: 1.2px;
+        font-weight: 700;
+
+      }
+
+      p {
+        font-family: "Advent Pro", sans-serif;
+        font-size: 1.4rem;
+        letter-spacing: 1.2px;
+        font-weight: 400;
+      }
+    }
+
+    &--box2 {
+      h1 {
+        font-family: "Advent Pro", sans-serif;
+        font-weight: 700;
+        font-size: 8.9rem;
+        color: black;
+        letter-spacing: 1.2px;
+        text-align: center;
+        margin-top: -3.5rem;
+
+        @media only screen and (max-width: 576px) {
+          font-size: 7rem;
+        }
+      }
+
+      h3 {
+        font-family: "Advent Pro", sans-serif;
+        font-weight: 200;
+        font-size: 2rem;
+        color: black;
+        letter-spacing: 1.2px;
+
+        @media only screen and (max-width: 768px) {
+            transform: translateX(12rem);
+          }
+
+          @media only screen and (max-width: 576px) {
+            transform: translateX(5rem);
+          }
+      }
+
+      p {
+        font-family: "Advent Pro", sans-serif;
+        font-size: 1.4rem;
+        letter-spacing: 1.2px;
+        font-weight: 400;
+        margin-top: -1.5rem;
+      }
+
+      img {
+        box-shadow: 2px 2px 6px grey;
+        transition: all 0.3s;
+
+        &:hover {
+          transform: translateX(-3px);
+        }
+      }
+    }
+  }
+}
+ 
+
+#dreher {
+  
+    background-color: red;
+}
+

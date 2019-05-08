@@ -1,0 +1,317 @@
+.header {
+  height: 100vh;
+  margin-bottom: 20rem;
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 10rem;
+  }
+
+  @media only screen and (max-width: 576px) {
+    margin-bottom: 5rem;
+  }
+
+  &__logo {
+    margin-top: 6rem;
+
+    h1 {
+      transform: rotate(270deg);
+      font-family: 'Advent Pro', sans-serif;
+      font-size: 2rem;
+      color: black;
+      letter-spacing: 1.2px;
+      text-align: center;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    h3 {
+      transform: rotate(270deg);
+      font-family: 'Advent Pro', sans-serif;
+      font-size: 1.4rem;
+      color: black;
+      font-weight: 200;
+      letter-spacing: 1.2px;
+      margin-left: -4rem;
+
+    }
+
+    &--number {
+      margin-left: -5.7rem!important;
+    }
+
+    svg {
+      margin-left: -3rem;
+    }
+  }
+
+  &__bg {
+    &--svg {
+      position: fixed;
+      margin-left: 20rem;
+    }
+  }
+
+  &__rightbox {
+    position: relative;
+    margin-top: 20rem;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: 992px) {
+      margin-left: 20rem;
+    }
+
+    &--h1 {
+      position: absolute;
+      font-family: 'Advent Pro', sans-serif;
+      font-weight: 700;
+      font-size: 8.9rem;
+      color: black;
+      letter-spacing: 1.2px;
+      text-align: center;
+      line-height: 8.6rem;
+      top: 11rem;
+      left: -20rem;
+
+      @media only screen and (max-width: 576px) {
+        font-size:  7rem;
+      }
+    }
+
+    &--mt8 {
+      margin-top:7.5rem;
+      margin-left: 10rem;
+    }
+
+    &--h3 {
+      position: absolute;
+      font-family: 'Advent Pro', sans-serif;
+      font-weight: 200;
+      font-size: 2rem;
+      color: black;
+      letter-spacing: 1.2px;
+      text-align: center;
+      top: 9rem;
+      left: -10rem;
+    }
+
+    &--svg {
+      position: absolute;
+      z-index: -1;
+      top: -5rem;
+      min-width: 50%;
+    }
+  }
+}
+
+.bgheader {
+  &__fix {
+    position: fixed;
+
+    @media only screen and (max-width: 576px) {
+      opacity: 0.5;
+    }
+    
+
+    &--h {
+      position: absolute;
+      top: 10rem;
+      left: 16rem;
+
+      @media only screen and (max-width: 992px) {
+        width: 33px;
+        height: 45.5px;
+      }
+    }
+
+    &--i {
+      position: absolute;
+      top: 18rem;
+      left: 37rem;
+
+      @media only screen and (max-width: 992px) {
+        width: 7.5px;
+        height: 45.5px;
+      }
+    }
+
+    &--t {
+      position: absolute;
+      top: 70rem;
+      left: 20rem;
+
+      @media only screen and (max-width: 992px) {
+        width: 33px;
+        height: 45.5px;
+      }
+    }
+    &--l {
+      position: absolute;
+      top: 70rem;
+      left: 94rem;
+
+      @media only screen and (max-width: 992px) {
+        width: 33px;
+        height: 45.5px;
+      }
+    }
+
+    &--v {
+      position: absolute;
+      top: 50rem;
+      left: 45rem;
+
+      @media only screen and (max-width: 992px) {
+        width: 33px;
+        height: 45.5px;
+      }
+    }
+
+    &--m {
+      position: absolute;
+      top: 0rem;
+      left: 80rem;
+
+      @media only screen and (max-width: 992px) {
+        width: 33px;
+        height: 45.5px;
+      }
+    }
+
+    &--a {
+      position: absolute;
+      top: 24rem;
+      left: 85rem;
+
+      @media only screen and (max-width: 992px) {
+        width: 33px;
+        height: 45.5px;
+      }
+    }
+  }
+}
+.bottom {
+  &__text {
+    position: relative;
+    h1 {
+      position: relative;
+      transform: rotate(270deg);
+      font-family: 'Advent Pro', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      color: black;
+      letter-spacing: 1.2px;
+      margin-bottom: 2rem;
+      cursor: pointer;
+      
+      @media only screen and (max-width: 576px) {
+        transform: rotate(0deg);
+        margin-left:1rem;
+        margin-bottom: 0rem;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 1%;
+        top:-0.4rem;
+        left:0rem;
+        background-color: black;
+        transition: all .3s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    h3 {
+      font-family: 'Advent Pro', sans-serif;
+      font-weight: 200;
+      font-size: 1.4rem;
+      color: black;
+      letter-spacing: 1.2px;
+      margin-bottom: 3rem;
+      margin-left: -4.8rem;
+      transform: rotate(270deg);
+
+      @media only screen and (max-width: 576px) {
+        transform: rotate(0deg);
+        margin-left:1.5rem;
+        margin-bottom: 2rem;
+       
+      }
+    }
+
+    &--scroll {
+      content: "";
+      position: absolute;
+      height: 15.5rem;
+      width: 2px;
+      top:-10rem;
+      right:4rem;
+      background-color: rgba(128, 128, 128, 0.342);
+      overflow: hidden;
+
+      &:before {
+        content: "";
+        height: 6rem;
+        width: 2px;
+        background-color: black;
+        top: 0;
+        left:0;
+        position: absolute;
+        transform: translateY(-100%);
+        animation: scrollmove 2s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      &--h1 {
+        margin-top:2rem;
+      }
+    }
+  }
+}
+
+@keyframes scrollmove {
+  from {transform: translateY(-100%);}
+  to {transform: translateY(15.5rem);}
+}
+
+/* ========================================================
+                      HEADER LEFT
+  ========================================================*/
+  .header {
+
+    &__left {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left:0;
+      transform: translateX(-100%);
+    }
+  }
+
+
+/* ========================================================
+                      ADD REMOVE CSS
+========================================================*/
+.visible-left {
+    transform: translateX(0%);
+    transition: all 0.7s 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.display-block {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.rightbox-push{
+  transform: translateX(50%);
+  transition: all 0.3s;
+}
+
+.rightbox-hide{
+  opacity: 0.2 !important;
+  transition: all 2s;
+}

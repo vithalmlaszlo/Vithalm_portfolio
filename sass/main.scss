@@ -1,0 +1,18 @@
+//Bootstrap-grid
+@import "../sass/bootstrap/bootstrap.scss";
+
+//Pages
+@import "../sass/pages/contact.scss";
+@import "../sass/pages/carnet.scss";
+@import "../sass/pages/borsodi.scss";
+@import "../sass/pages/menedekhaz.scss";
+@import "../sass/pages/kava.scss";
+@import "../sass/pages/pictures.scss";
+
+/* MAIN */
+@import "base";
+@import "typography";
+@import "header";
+@import "custom";
+@import "navigation";
+

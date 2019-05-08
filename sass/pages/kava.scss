@@ -1,0 +1,16 @@
+.kava {
+    height: 100vh;
+    margin-bottom: 20rem;
+
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 10rem;
+    }
+    
+    @media only screen and (max-width: 576px) {
+        margin-bottom: 5rem;
+    }
+
+    &__right {
+        transform: translateX(-10rem);
+    }
+}

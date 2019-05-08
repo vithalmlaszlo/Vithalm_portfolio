@@ -1,0 +1,32 @@
+{
+  "name": "vithalm-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch.sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server --browser='Google Chrome'",
+    "start": "npm-run-all --parallel devserver watch.sass",
+
+    "compile.sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat.css": "concat -o css/style.concat.css css/style.comp.css css/normalize.css css/animate.css",
+    "prefixer.css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "compress.css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build.css": "npm-run-all compile.sass concat.css prefixer.css compress.css"
+  },
+  "keywords": [],
+  "author": "vithalm",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "live-server": "^1.2.1",
+    "set-default-browser": "^1.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

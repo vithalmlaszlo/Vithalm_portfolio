@@ -1,0 +1,24 @@
+/* ==============================================================
+                        MEDIA-QUERIES
+=================================================================*/
+html {
+  font-size: 62.5%; //1 rem = 10px; 10px/16px =62.5%;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: 576px) {
+    font-size: 50%;
+  }
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+

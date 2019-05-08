@@ -1,0 +1,370 @@
+/* ========================================================
+                      HAMBURGER Menu
+  ========================================================*/
+  .navbar__container--trigger {
+    display: inline-block;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    padding: 0 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    font-size: 0.875rem;
+  
+    @media only screen and (max-width: 576px) {
+      right: 0rem;
+      top: 0.5rem;
+    }
+  
+    & span {
+      position: relative;
+      display: inline-block;
+      width: 15px;
+      height: 2px;
+      background-color:#900F35;
+      vertical-align: middle;
+      transform: translateY(-2px);
+  
+      &::before,
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        background-color:black;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        transition: all 0.2s;
+      }
+  
+      &::before {
+        top: -8px;
+      }
+  
+      &::after {
+        bottom: -8px;
+      }
+    }
+  
+    &:hover span::before {
+      top: -8px;
+    }
+  
+    &:hover span::after {
+      bottom: -8px;
+    }
+  }
+  
+  /* ========================================================
+                          NAV menu
+      ========================================================*/
+  
+  #main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-150%);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    z-index: 3;
+  }
+  
+  /* Show menu */
+  #main-nav.is-visible {
+    transform: translateY(0);
+  }
+  
+  /* Close menu + animation */
+  #main-nav .cd-close-menu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    /* image replacement */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+  }
+  
+  #main-nav .cd-close-menu::before,
+  #main-nav .cd-close-menu::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    transition-property: transform;
+    transition-duration: 0.3s;
+  }
+  
+  #main-nav .cd-close-menu::before {
+    transform: rotate(45deg);
+  }
+  
+  #main-nav .cd-close-menu::after {
+    transform: rotate(135deg);
+  }
+  
+  #main-nav .cd-close-menu:hover::before {
+    transform: rotate(225deg);
+  }
+  
+  #main-nav .cd-close-menu:hover::after {
+    transform: rotate(315deg);
+  }
+  
+  /* ========================================================
+                          DESIGN NAV CONTENT
+      ========================================================*/
+  .navbar__content {
+    height: 100%;
+  
+    &--ul {
+      padding: 0;
+    }
+  
+    &--li {
+      list-style: none;
+      text-align: center;
+    }
+  
+    &--a {
+      transition: all 0.3s;
+      display: block;
+  
+      &:hover {
+        transform: translateX(1px);
+        text-shadow: 2px 2px 5px grey;
+      }
+    }
+  }
+  /* ========================================================
+                        Animation Link 
+    ========================================================*/
+  .in--1 {
+    animation-name: in--1;
+    animation-duration: 2.4s;
+  }
+  
+  @keyframes in--1 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    60% {
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    90% {
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .in--2 {
+    animation-name: in--2;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes in--2 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    60% {
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    90% {
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .in--3 {
+    animation-name: in--3;
+    animation-duration: 1.6s;
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes in--3 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    60% {
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    90% {
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .in--4 {
+    animation-name: in--4;
+    animation-duration: 1.4s;
+    animation-delay: 1.2s;
+  }
+  
+  @keyframes in--4 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    60% {
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    90% {
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .in--5 {
+    animation-name: in--5;
+    animation-duration: 1.4s;
+    animation-delay: 1.6s;
+  }
+  
+  @keyframes in--5 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    60% {
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    90% {
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .in--6 {
+    animation-name: in--6;
+    animation-duration: 1.4s;
+    animation-delay: 2s;
+  }
+  
+  @keyframes in--6 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    60% {
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    90% {
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  
+  }
