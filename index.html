@@ -18,6 +18,7 @@
     <meta property="og:url" content="">
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/morphext.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/magnific-popup.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
@@ -276,8 +277,11 @@
                     <div class="col-12 col-lg-6">
                         <div class="header__rightbox">
                             <h3 class="header__rightbox--h3">Vithalm is a digital studio</h3>
-                            <h1 class="header__rightbox--h1">I make <span id="changing">digital</span></h1>
-                            <h1 class="header__rightbox--h1 header__rightbox--mt8">things!</h1>
+                            <h1 class="header__rightbox--h1">I make 
+                                <span id="change">Code, Some, Old</span>
+                                </h1>
+                            <h1 class="header__rightbox--h1 header__rightbox--mt8"><span>Things!</span>
+                            </h1>
                             <svg class="header__rightbox--svg  " width="552px" height="553px" viewBox="0 0 552 553"
                                 version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -462,12 +466,11 @@
                             wanted a cool, unique website with a design that distinguishes the company from other
                             dealerships. Their goal was the renewal of the joomla based site.</p>
 
-                        <button class="contact__form--button"
-                            onclick="location.href='http://menedekhaz.hu/carnet/index.html'" type="button">
-                            Launch Project</button>
-                        <a href="http://menedekhaz.hu/carnet/index.html" target="_blank">
+                            <button class="contact__form--button"
+                            onclick="window.open('http://menedekhaz.hu/carnet/index.html' + location.search)" type="button">
+                            Show Project</button>
                             <img src="./__img__/carnet_home_pic.png" alt="">
-                        </a>
+                        
                     </div>
                 </div>
             </div><!-- end large layout -->
@@ -620,7 +623,9 @@
                         <p>A Dréher Sörgyárak minden promóciója, ami minden évben elindul pár hónappal a Sziget
                             fesztivál megrendezése előtt. A több éves design már elavult volt, ezért ebben az évben újat
                             frisset szerettek volna. A project még fejlesztés alatt van</p>
-                        <button class="contact__form--button mb-3" type="submit">Launch Project</button>
+                            <button class="contact__form--button mb-3"
+                            onclick="window.open('./__scores__/menedekhaz_layout.pdf' + location.search)" type="button">
+                            Launch Project</button>
                         <img src="./__img__/menedekhaz_home-pic.png" alt="">
                     </div>
                 </div>
@@ -939,9 +944,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
-
+        <script src="./js/morphext.min.js"></script>
+        <script>
+            $("#change").Morphext({
+    // The [in] animation type. Refer to Animate.css for a list of available animations.
+    animation: "bounceIn",
+    // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+    separator: ",",
+    // The delay between the changing of each phrase in milliseconds.
+    speed: 2000,
+    complete: function () {
+        // Called after the entrance animation is executed.
+    }
+});
+        </script>
     <script src="./js/jquery.magnific-popup.min.js"></script>
-    <script src="./js/autochange_text.js"></script>
+   <!--  <script src="./js/autochange_text.js"></script> -->
     <script src="./js/main.js"></script>
 </body>
 

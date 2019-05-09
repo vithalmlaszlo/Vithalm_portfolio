@@ -7354,6 +7354,10 @@ body {
   scrollbar-face-color: red;
   scrollbar-track-color: #ff8080; }
 
+#change {
+  /* Overrides Animate.css 1s duration */
+  animation-duration: 6s; }
+
 .header {
   height: 100vh;
   margin-bottom: 20rem;

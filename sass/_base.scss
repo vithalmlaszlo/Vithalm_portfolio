@@ -90,3 +90,7 @@ transition: all 2s;
 //CREATIVE SCROLLBAR 
 @include scrollbars(0.5em, red);
 
+#change{
+  /* Overrides Animate.css 1s duration */
+  animation-duration: 6s;
+}
