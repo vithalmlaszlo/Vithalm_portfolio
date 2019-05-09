@@ -7020,6 +7020,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/* ========================================================
+                      CONTACT DESIGN
+========================================================*/
 .contact {
   /* background-image: linear-gradient(
     to right bottom,
@@ -7122,7 +7125,14 @@ a.text-dark:hover, a.text-dark:focus {
     .contact--p:hover {
       color: black;
       text-decoration: none; }
+  .contact__social svg {
+    transition: all 0.3s; }
+    .contact__social svg:hover {
+      transform: translateY(2px); }
 
+/* ========================================================
+                      CARNET DESIGN
+========================================================*/
 .carnet {
   height: 100vh;
   margin-bottom: 20rem; }
@@ -7186,14 +7196,13 @@ a.text-dark:hover, a.text-dark:focus {
       font-weight: 400;
       margin-top: -1.5rem; }
     .carnet__info--box2 img {
-      box-shadow: 2px 2px 6px grey;
       transition: all 0.3s; }
       .carnet__info--box2 img:hover {
         transform: translateX(-3px); }
 
-#dreher {
-  background-color: red; }
-
+/* ========================================================
+                      DREHER DESIGN
+========================================================*/
 .dreher {
   height: 100%;
   margin-bottom: 20rem; }
@@ -7204,6 +7213,9 @@ a.text-dark:hover, a.text-dark:focus {
     .dreher {
       margin-bottom: 5rem; } }
 
+/* ========================================================
+                    MENEDEKHAZ DESIGN
+========================================================*/
 .menedekhaz {
   position: relative;
   height: 100vh;
@@ -7214,12 +7226,6 @@ a.text-dark:hover, a.text-dark:focus {
   @media only screen and (max-width: 576px) {
     .menedekhaz {
       margin-bottom: 5rem; } }
-  .menedekhaz__svgbox {
-    position: absolute;
-    top: 25%;
-    right: 0;
-    z-index: 2;
-    opacity: 0.5; }
   .menedekhaz__logobox {
     transform: translateX(-10rem); }
   .menedekhaz__textbox h1 {
@@ -7231,6 +7237,9 @@ a.text-dark:hover, a.text-dark:focus {
   .menedekhaz__textbox img {
     margin-left: -2rem; }
 
+/* ========================================================
+                    KAVA DESIGN
+========================================================*/
 .kava {
   height: 100vh;
   margin-bottom: 20rem; }
@@ -7243,6 +7252,9 @@ a.text-dark:hover, a.text-dark:focus {
   .kava__right {
     transform: translateX(-10rem); }
 
+/* ========================================================
+                    PICTURE DESIGN
+========================================================*/
 .pictures {
   height: 100vh;
   margin-bottom: 20rem; }
@@ -7256,8 +7268,27 @@ a.text-dark:hover, a.text-dark:focus {
     transform: translateY(-9.5rem); }
   .pictures__godUP {
     transform: translateY(-8rem); }
+    @media only screen and (max-width: 992px) {
+      .pictures__godUP {
+        transform: translateY(1.5rem); } }
+    @media only screen and (max-width: 768px) {
+      .pictures__godUP {
+        transform: translateY(-3rem); } }
   .pictures__almaUP {
     transform: translateY(-6.5rem); }
+    @media only screen and (max-width: 992px) {
+      .pictures__almaUP {
+        transform: translateY(3rem); } }
+    @media only screen and (max-width: 768px) {
+      .pictures__almaUP {
+        transform: translateY(-1rem); } }
+  .pictures__img {
+    margin-left: 0rem !important; }
+  .pictures__h1 {
+    margin-left: 4rem;
+    margin-top: 0.5rem; }
+  .pictures__p {
+    margin-top: 0 !important; }
 
 /* MAIN */
 /* ==============================================================
@@ -7272,6 +7303,9 @@ html {
     html {
       font-size: 50%; } }
 
+/* ==============================================================
+                        NORMALIZE ++
+=================================================================*/
 html,
 body {
   width: 100%;
@@ -7280,15 +7314,70 @@ body {
   padding: 0px;
   overflow-x: hidden; }
 
+/* ========================================================
+                      ADD REMOVE CSS
+========================================================*/
+.visible-left {
+  transform: translateX(0) !important;
+  transition: all 0.7s 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+
+.display-block {
+  opacity: 0;
+  transition: all 0.3s; }
+
+.rightbox-push {
+  transform: translateX(50%);
+  transition: all 0.3s; }
+
+.rightbox-hide {
+  opacity: 0.2 !important;
+  transition: all 2s; }
+
+.rightbox-OFF {
+  opacity: 0 !important;
+  transition: all 2s; }
+
+/* ==============================================================
+                        SCROLLBAR CREATIVE
+=================================================================*/
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em; }
+
+::-webkit-scrollbar-thumb {
+  background: red; }
+
+::-webkit-scrollbar-track {
+  background: #ff8080; }
+
+body {
+  scrollbar-face-color: red;
+  scrollbar-track-color: #ff8080; }
+
 .header {
   height: 100vh;
-  margin-bottom: 20rem; }
+  margin-bottom: 20rem;
+  /* ==============================================================
+                      RIGHTBOX DESIGN
+=================================================================*/ }
   @media only screen and (max-width: 768px) {
     .header {
       margin-bottom: 10rem; } }
   @media only screen and (max-width: 576px) {
     .header {
       margin-bottom: 5rem; } }
+  .header__icon--down {
+    font-size: 4rem;
+    color: black;
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%); }
+    .header__icon--down:hover {
+      color: grey;
+      opacity: 0.7;
+      text-shadow: 1px 0px 2px black;
+      animation: down 1s; }
   .header__logo {
     margin-top: 6rem; }
     .header__logo h1 {
@@ -7355,6 +7444,9 @@ body {
       top: -5rem;
       min-width: 50%; }
 
+/* ==============================================================
+                        CREATIVE BG TEXT
+=================================================================*/
 .bgheader__fix {
   position: fixed; }
   @media only screen and (max-width: 576px) {
@@ -7417,6 +7509,9 @@ body {
         width: 33px;
         height: 45.5px; } }
 
+/* ==============================================================
+                        BOTTOM DESIGN
+=================================================================*/
 .bottom__text {
   position: relative; }
   .bottom__text h1 {
@@ -7488,7 +7583,7 @@ body {
     transform: translateY(15.5rem); } }
 
 /* ========================================================
-                      HEADER LEFT
+                      CONTACT LEFT SIDE
   ========================================================*/
 .header__left {
   height: 100%;
@@ -7496,36 +7591,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-100%); }
-
-/* ========================================================
-                      ADD REMOVE CSS
-========================================================*/
-.visible-left {
-  transform: translateX(0%);
-  transition: all 0.7s 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
-
-.display-block {
-  opacity: 0;
-  transition: all 0.3s; }
-
-.rightbox-push {
-  transform: translateX(50%);
-  transition: all 0.3s; }
-
-.rightbox-hide {
-  opacity: 0.2 !important;
-  transition: all 2s; }
-
-.rightbox-OFF {
-  opacity: 0 !important;
-  transition: all 2s; }
+  transform: translateX(-100%);
+  z-index: 100; }
 
 /* ==============================================================
                         CUSTOMIZING BOOTSTRAP 
 =================================================================*/
 /* ==============================================================
-                        CUSTOMIZING MAGNETIC 
+                        CUSTOM MAGNETIC-POPUP
 =================================================================*/
 .mfp-close {
   font-size: 40px;
@@ -7663,7 +7736,7 @@ body {
       text-shadow: 2px 2px 5px grey; }
 
 /* ========================================================
-                        Animation Link 
+                        Animation MENU 
     ========================================================*/
 .in--1 {
   animation-name: in--1;

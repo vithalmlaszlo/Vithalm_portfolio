@@ -10,6 +10,22 @@
     margin-bottom: 5rem;
   }
 
+  &__icon--down {
+      font-size: 4rem;
+      color: black;
+      position: absolute;
+      bottom: 5rem;
+      left:50%;
+      transform: translateX(-50%);
+
+      &:hover {
+        color: grey;
+        opacity: 0.7;
+        text-shadow: 1px 0px 2px black;
+        animation: down 1s ;
+      }
+  }
+
   &__logo {
     margin-top: 6rem;
 
@@ -51,6 +67,9 @@
     }
   }
 
+/* ==============================================================
+                      RIGHTBOX DESIGN
+=================================================================*/
   &__rightbox {
     position: relative;
     margin-top: 20rem;
@@ -103,6 +122,9 @@
   }
 }
 
+/* ==============================================================
+                        CREATIVE BG TEXT
+=================================================================*/
 .bgheader {
   &__fix {
     position: fixed;
@@ -189,6 +211,10 @@
     }
   }
 }
+
+/* ==============================================================
+                        BOTTOM DESIGN
+=================================================================*/
 .bottom {
   &__text {
     position: relative;
@@ -278,7 +304,7 @@
 }
 
 /* ========================================================
-                      HEADER LEFT
+                      CONTACT LEFT SIDE
   ========================================================*/
   .header {
 
@@ -289,34 +315,6 @@
       top: 0;
       left:0;
       transform: translateX(-100%);
+      z-index: 100;
     }
   }
-
-
-/* ========================================================
-                      ADD REMOVE CSS
-========================================================*/
-.visible-left {
-    transform: translateX(0%);
-    transition: all 0.7s 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-
-.display-block {
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.rightbox-push{
-  transform: translateX(50%);
-  transition: all 0.3s;
-}
-
-.rightbox-hide{
-  opacity: 0.2 !important;
-  transition: all 2s;
-}
-
-.rightbox-OFF{
-  opacity: 0 !important;
-  transition: all 2s;
-}

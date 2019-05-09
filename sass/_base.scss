@@ -12,6 +12,10 @@ html {
     font-size: 50%;
   }
 }
+
+/* ==============================================================
+                        NORMALIZE ++
+=================================================================*/
 html,
 body {
   width: 100%;
@@ -19,6 +23,70 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  
+}
+/* ========================================================
+                      ADD REMOVE CSS
+========================================================*/
+.visible-left {
+  transform: translateX(0)!important;
+  transition: all 0.7s 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
+.display-block {
+opacity: 0;
+transition: all 0.3s;
+}
+
+.rightbox-push{
+transform: translateX(50%);
+transition: all 0.3s;
+}
+
+.rightbox-hide{
+opacity: 0.2 !important;
+transition: all 2s;
+}
+
+.rightbox-OFF{
+opacity: 0 !important;
+transition: all 2s;
+}
+
+
+/* ==============================================================
+                        SCROLLBAR CREATIVE
+=================================================================*/
+// Mixin to customize scrollbars
+/// Beware, this does not work in all browsers
+/// @author Hugo Giraudel
+/// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
+/// @param {Color} $foreground-color - Scrollbar's color
+/// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
+/// @example scss - Scrollbar styling
+///   @include scrollbars(.5em, slategray);
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+//CREATIVE SCROLLBAR 
+@include scrollbars(0.5em, red);
 

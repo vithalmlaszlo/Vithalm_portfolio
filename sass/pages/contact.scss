@@ -1,3 +1,6 @@
+/* ========================================================
+                      CONTACT DESIGN
+========================================================*/
 .contact {
   /* background-image: linear-gradient(
     to right bottom,
@@ -134,5 +137,14 @@
         text-decoration: none;
     }
 
+  }
+
+  &__social svg {
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(2px);
+    }
+    
   }
 }

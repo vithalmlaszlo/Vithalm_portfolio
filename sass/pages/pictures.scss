@@ -1,3 +1,6 @@
+/* ========================================================
+                    PICTURE DESIGN
+========================================================*/
 .pictures {
     height: 100vh;
     margin-bottom: 20rem;
@@ -16,10 +19,34 @@
 
     &__godUP {
         transform: translateY(-8rem);
+        @media only screen and (max-width: 992px) {
+            transform: translateY(1.5rem);
+        }
+        @media only screen and (max-width: 768px) {
+            transform: translateY(-3rem);
+        }
     }
 
     &__almaUP {
         transform: translateY(-6.5rem);
+        @media only screen and (max-width: 992px) {
+            transform: translateY(3rem);
+        }
+        @media only screen and (max-width: 768px) {
+            transform: translateY(-1rem);
+        }
     }
 
+    &__img {
+        margin-left:0rem!important;
+    }
+
+    &__h1 {
+        margin-left: 4rem;
+        margin-top: 0.5rem;
+    }
+
+    &__p {
+        margin-top:0!important;
+    }
 }

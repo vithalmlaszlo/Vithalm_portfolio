@@ -1,3 +1,6 @@
+/* ========================================================
+                      CARNET DESIGN
+========================================================*/
 .carnet {
     height: 100vh;
     margin-bottom: 20rem;
@@ -89,7 +92,7 @@
       }
 
       img {
-        box-shadow: 2px 2px 6px grey;
+      
         transition: all 0.3s;
 
         &:hover {
@@ -98,11 +101,5 @@
       }
     }
   }
-}
- 
-
-#dreher {
-  
-    background-color: red;
 }
 

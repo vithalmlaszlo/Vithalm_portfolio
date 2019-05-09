@@ -1,3 +1,6 @@
+/* ========================================================
+                    MENEDEKHAZ DESIGN
+========================================================*/
 .menedekhaz {
     position: relative;
     height: 100vh;
@@ -10,14 +13,6 @@
       @media only screen and (max-width: 576px) {
         margin-bottom: 5rem;
       }
-
-    &__svgbox {
-        position: absolute;
-        top: 25%;
-        right:0;
-        z-index: 2;
-        opacity: 0.5;
-    }
 
     &__logobox {
         transform: translateX(-10rem);
@@ -32,8 +27,6 @@
                 transform: translateX(-1rem);
               }
         }
-
-        
 
         img {
             margin-left:-2rem;
