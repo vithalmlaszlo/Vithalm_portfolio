@@ -6,37 +6,21 @@
 //Don't modifyling the source file PLEASE
 
 
-
-
-
-
-
-
-/* ==============================================================
-                        CUSTOM MAGNETIC-POPUP
-=================================================================*/
-.mfp-close {
-    font-size: 40px;
-    font-weight: 400;
-    color: black;
-}
-
-.mfp-title {
-    font-family: "Advent Pro", sans-serif;
-    font-size: 1.4rem;
-    letter-spacing: 1.2px;
-    font-weight: 400;
-    color: black;
-
-}
-
-.mfp-bg {
-    background: transparent;
-}
-
 /* ==============================================================
                         INIT MORPEXT
 =================================================================*/
 .morphext > .animated {
     display: inline-block;
 }
+
+/* ==============================================================
+                        MAgnetic -POP DESIGN
+=================================================================*/
+.mfp-arrow-left {
+    display: none  !important;
+}
+
+.mfp-arrow-right  {
+    display: none  !important;
+}
+

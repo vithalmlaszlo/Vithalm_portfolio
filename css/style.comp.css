@@ -7129,6 +7129,8 @@ a.text-dark:hover, a.text-dark:focus {
     transition: all 0.3s; }
     .contact__social svg:hover {
       transform: translateY(2px); }
+  .contact__marginbottom {
+    margin-top: 1rem; }
 
 /* ========================================================
                       CARNET DESIGN
@@ -7236,6 +7238,8 @@ a.text-dark:hover, a.text-dark:focus {
         transform: translateX(-1rem); } }
   .menedekhaz__textbox img {
     margin-left: -2rem; }
+  .menedekhaz__textbox--btndown {
+    margin-top: -1rem; }
 
 /* ========================================================
                     KAVA DESIGN
@@ -7357,6 +7361,18 @@ body {
 #change {
   /* Overrides Animate.css 1s duration */
   animation-duration: 6s; }
+
+.thanks__btn {
+  margin-top: 20rem;
+  margin-left: -13rem; }
+  @media only screen and (max-width: 992px) {
+    .thanks__btn {
+      margin-top: 20rem;
+      margin-left: 5rem; } }
+  @media only screen and (max-width: 380px) {
+    .thanks__btn {
+      margin-top: 27rem;
+      margin-left: 5rem; } }
 
 .header {
   height: 100vh;
@@ -7598,32 +7614,98 @@ body {
   transform: translateX(-100%);
   z-index: 100; }
 
+/* ========================================================
+                      BG ANIMATE
+========================================================*/
+.bganimate__t {
+  animation: t 10s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045); }
+
+.bganimate__h {
+  transform: rotate(270deg);
+  animation: h 7s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.bganimate__m {
+  animation: m 5s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.bganimate__l {
+  animation: l 8s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.bganimate__a {
+  animation: a 4s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+@keyframes a {
+  0% {
+    transform: translateY(0); }
+  80% {
+    transform: translateY(100%); }
+  90% {
+    transform: translateY(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateY(0%); } }
+
+@keyframes t {
+  0% {
+    transform: translateY(0); }
+  80% {
+    transform: translateY(0); }
+  90% {
+    transform: translateY(100%); }
+  100% {
+    transform: translateY(0%); } }
+
+@keyframes h {
+  0% {
+    transform: translateX(0); }
+  80% {
+    transform: translateX(0);
+    fill: #473E65; }
+  90% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0%); } }
+
+@keyframes m {
+  0% {
+    transform: translateX(0); }
+  80% {
+    transform: translateX(100%);
+    fill: #00567D; }
+  90% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0%); } }
+
+@keyframes l {
+  0% {
+    transform: translateY(0); }
+  80% {
+    transform: translateY(100%);
+    fill: #AB3F3A; }
+  90% {
+    transform: translateY(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateY(0%); } }
+
 /* ==============================================================
                         CUSTOMIZING BOOTSTRAP 
 =================================================================*/
-/* ==============================================================
-                        CUSTOM MAGNETIC-POPUP
-=================================================================*/
-.mfp-close {
-  font-size: 40px;
-  font-weight: 400;
-  color: black; }
-
-.mfp-title {
-  font-family: "Advent Pro", sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 1.2px;
-  font-weight: 400;
-  color: black; }
-
-.mfp-bg {
-  background: transparent; }
-
 /* ==============================================================
                         INIT MORPEXT
 =================================================================*/
 .morphext > .animated {
   display: inline-block; }
+
+/* ==============================================================
+                        MAgnetic -POP DESIGN
+=================================================================*/
+.mfp-arrow-left {
+  display: none  !important; }
+
+.mfp-arrow-right {
+  display: none  !important; }
 
 /* ========================================================
                       HAMBURGER Menu
