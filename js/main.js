@@ -51,11 +51,16 @@
     $('.bottom__text--say h1').on('click', function (event) {
       event.preventDefault();
       $('.header__left').toggleClass('visible-left');
+      
+      
       $('.header__logo').toggleClass('display-block');
       $('.header__rightbox').toggleClass('rightbox-push');
       $('.header__rightbox--h3').toggleClass('rightbox-hide');
       $('.header__rightbox--h1').toggleClass('rightbox-hide');
       $('.navbar__container--trigger ').toggleClass('display-block');
+      $('.bottom__text--scroll--h1').toggleClass('display-block');
+      $('.bottom__text--scroll').toggleClass('display-block');
+    
 
       //carnet
       $('.carnet__info').toggleClass('rightbox-push');
@@ -74,6 +79,55 @@
         $('#sayhello').text('Hello.');}
       
   });
+
+  /* About botton open/close */
+  $('.bottom__text--scroll--h1').on('click', function (event) {
+    event.preventDefault();
+    $('.header__right').toggleClass('visible-right');
+
+    $('.header__logo').toggleClass('display-block');
+    $('.header__rightbox').toggleClass('rightbox-push-left');
+    $('.header__rightbox--h3').toggleClass('rightbox-hide');
+    $('.header__rightbox--h1').toggleClass('rightbox-hide');
+    $('.navbar__container--trigger ').toggleClass('display-block');
+    $('.bottom__text--say h1').toggleClass('display-block');
+
+
+
+    //
+    $('.carnet__info').toggleClass('rightbox-push-left');
+    $('.carnet__logo').toggleClass('rightbox-hide');
+    $('.carnet__text').toggleClass('rightbox-hide');
+    $('.carnet__info').toggleClass('rightbox-OFF');
+    $('.kava__right').toggleClass('rightbox-OFF');
+
+    
+});
+
+/* SAY text open/close */
+$('.about__textbox--say').on('click', function (event) {
+  event.preventDefault();
+  $('.header__right').removeClass('visible-right');
+  $('.header__left').addClass('visible-left');
+  $('.bottom__text--say h1').toggleClass('display-block');
+  $('.bottom__text--scroll--h1').toggleClass('display-block');
+      $('.bottom__text--scroll').toggleClass('display-block');
+
+  $('.header__rightbox').addClass('rightbox-push');
+  $('.header__rightbox').removeClass('rightbox-push-left');
+
+  $('.carnet__info').removeClass('rightbox-OFF');
+  $('.carnet__info').addClass('rightbox-hide');
+ 
+  $('.carnet__logo').removeClass('rightbox-hide');
+  $('.carnet__logo').addClass('rightbox-OFF');
+   
+  $('.carnet__text').removeClass('rightbox-hide');
+  $('.carnet__text').addClass('rightbox-OFF');
+
+  $('.carnet__info').removeClass('rightbox-push-left');
+  $('.carnet__info').addClass('rightbox-push');
+});
   
   /* ========================================================
                       Add name to span when write
@@ -123,6 +177,8 @@
       
     }
   }); 
+
+  
 
 //Magnetic Pop-Up Gallery INIT
   $(document).ready(function() {

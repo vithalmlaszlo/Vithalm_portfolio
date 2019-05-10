@@ -1,0 +1,25 @@
+.about {
+  height: 100vh;
+  transition: all 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+  &__textbox {
+    &--p {
+      font-family: "Advent Pro", sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 1.2px;
+      font-weight: 400;
+    }
+
+    &--say {
+        color:#A63C37;
+        font-weight: bold;
+        transition: all 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            border-bottom: 1px solid #A63C37;
+        }
+
+    }
+  }
+}
