@@ -94,3 +94,17 @@ transition: all 2s;
   /* Overrides Animate.css 1s duration */
   animation-duration: 6s;
 }
+.thanks__btn {
+  margin-top: 20rem;
+  margin-left: -13rem;
+
+  @media only screen and (max-width: 992px) {
+    margin-top: 20rem;
+    margin-left: 5rem;
+  }
+
+  @media only screen and (max-width: 380px) {
+    margin-top: 27rem;
+    margin-left: 5rem;
+  }
+}

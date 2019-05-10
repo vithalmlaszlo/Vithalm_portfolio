@@ -7362,6 +7362,18 @@ body {
   /* Overrides Animate.css 1s duration */
   animation-duration: 6s; }
 
+.thanks__btn {
+  margin-top: 20rem;
+  margin-left: -13rem; }
+  @media only screen and (max-width: 992px) {
+    .thanks__btn {
+      margin-top: 20rem;
+      margin-left: 5rem; } }
+  @media only screen and (max-width: 380px) {
+    .thanks__btn {
+      margin-top: 27rem;
+      margin-left: 5rem; } }
+
 .header {
   height: 100vh;
   margin-bottom: 20rem;
