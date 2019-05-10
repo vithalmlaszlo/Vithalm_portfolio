@@ -7129,8 +7129,6 @@ a.text-dark:hover, a.text-dark:focus {
     transition: all 0.3s; }
     .contact__social svg:hover {
       transform: translateY(2px); }
-  .contact__marginbottom {
-    margin-top: 1rem; }
 
 /* ========================================================
                       CARNET DESIGN
@@ -7238,8 +7236,6 @@ a.text-dark:hover, a.text-dark:focus {
         transform: translateX(-1rem); } }
   .menedekhaz__textbox img {
     margin-left: -2rem; }
-  .menedekhaz__textbox--btndown {
-    margin-top: -1rem; }
 
 /* ========================================================
                     KAVA DESIGN
