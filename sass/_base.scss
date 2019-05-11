@@ -36,6 +36,10 @@ body {
 .visible-right {
   transform: translateX(50%)!important;
   transition: all 0.7s 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+  @media only screen and (max-width: 768px) {
+    transform: translateX(30%)!important;
+  }
 }
 
 .display-block {
