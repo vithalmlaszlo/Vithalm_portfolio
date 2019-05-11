@@ -48,7 +48,7 @@
   });
   
     /* KONTAKT button click */
-    $('.bottom__text--say h1').on('click', function (event) {
+    $('.bottom__text--say h1, #contact__close').on('click', function (event) {
       event.preventDefault();
       $('.header__left').toggleClass('visible-left');
       
@@ -69,8 +69,6 @@
       $('.carnet__info').toggleClass('rightbox-hide');
     
 
-      
-  
       var text = $('#sayhello').text();
         if (text == 'Hello.'){
       $('#sayhello').text('Bye.');}
@@ -81,7 +79,7 @@
   });
 
   /* About botton open/close */
-  $('.bottom__text--scroll--h1').on('click', function (event) {
+  $('.bottom__text--scroll--h1, #about__close').on('click', function (event) {
     event.preventDefault();
     $('.header__right').toggleClass('visible-right');
 
@@ -93,15 +91,12 @@
     $('.bottom__text--say h1').toggleClass('display-block');
 
 
-
-    //
     $('.carnet__info').toggleClass('rightbox-push-left');
     $('.carnet__logo').toggleClass('rightbox-hide');
     $('.carnet__text').toggleClass('rightbox-hide');
     $('.carnet__info').toggleClass('rightbox-OFF');
     $('.kava__right').toggleClass('rightbox-OFF');
 
-    
 });
 
 /* SAY text open/close */

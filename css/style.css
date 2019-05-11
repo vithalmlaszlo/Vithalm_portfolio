@@ -7131,22 +7131,66 @@ a.text-dark:hover, a.text-dark:focus {
       transform: translateY(2px); }
   .contact__marginbottom {
     margin-top: 1rem; }
+  .contact__close {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    /* image replacement */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap; }
+    .contact__close::before, .contact__close::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 30px;
+      left: 60px;
+      width: 20px;
+      height: 2px;
+      background-color: black;
+      transition-property: transform;
+      transition-duration: 0.3s; }
+    .contact__close::before {
+      transform: rotate(45deg); }
+    .contact__close::after {
+      transform: rotate(135deg); }
+    .contact__close:hover::before {
+      transform: rotate(225deg); }
+    .contact__close:hover::after {
+      transform: rotate(315deg); }
 
 .about {
   height: 100vh;
   transition: all 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
-  .about__textbox--p {
-    font-family: "Advent Pro", sans-serif;
-    font-size: 1.4rem;
-    letter-spacing: 1.2px;
-    font-weight: 400; }
-  .about__textbox--say {
-    color: #A63C37;
-    font-weight: bold;
-    transition: all 0.3s; }
-    .about__textbox--say:hover {
+  .about__textbox {
+    margin-top: 6rem; }
+    .about__textbox--p {
+      font-family: "Advent Pro", sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 1.2px;
+      font-weight: 400; }
+    .about__textbox a {
+      font-size: 2.5rem;
+      color: black;
+      position: absolute;
+      right: 0;
+      top: 7rem;
       cursor: pointer;
-      border-bottom: 1px solid #A63C37; }
+      transition: all 0.3s; }
+    .about__textbox a:hover {
+      text-decoration: none;
+      transform: translateX(-2px); }
+    .about__textbox--say {
+      color: #A63C37;
+      font-weight: bold;
+      transition: all 0.3s; }
+      .about__textbox--say:hover {
+        cursor: pointer;
+        border-bottom: 1px solid #A63C37; }
 
 /* ========================================================
                       CARNET DESIGN
@@ -7852,7 +7896,7 @@ body {
   left: 60px;
   width: 20px;
   height: 2px;
-  background-color: black;
+  background-color: #A63C37;
   transition-property: transform;
   transition-duration: 0.3s; }
 
