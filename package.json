@@ -18,7 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "live-server": "^1.2.1",
     "set-default-browser": "^1.0.1"
   },
