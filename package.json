@@ -23,9 +23,9 @@
     "set-default-browser": "^1.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^9.8.6",
     "concat": "^1.0.3",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^6.1.2"
   }

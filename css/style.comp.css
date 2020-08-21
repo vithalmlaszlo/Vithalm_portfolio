@@ -7418,14 +7418,14 @@ body {
   height: 0.5em; }
 
 ::-webkit-scrollbar-thumb {
-  background: red; }
+  background: blue; }
 
 ::-webkit-scrollbar-track {
-  background: #ff8080; }
+  background: #8080ff; }
 
 body {
-  scrollbar-face-color: red;
-  scrollbar-track-color: #ff8080; }
+  scrollbar-face-color: blue;
+  scrollbar-track-color: #8080ff; }
 
 #change {
   /* Overrides Animate.css 1s duration */
